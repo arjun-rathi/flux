@@ -8,12 +8,12 @@ preMerge:
   env:
     NODE_ENV: test
   pattern:
-    - src/container/__tests__/FluxContainer-test.js
+    - ./**/__tests__/**/*test.js
 postMerge:
   env:
     NODE_ENV: test
   pattern:
-    - src/container/__tests__/FluxContainer-test.js
+    - ./**/__tests__/**/*test.js
 postRun:
   command:
     - yarn --version
